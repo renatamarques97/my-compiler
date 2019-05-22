@@ -1,0 +1,75 @@
+programa renata;
+tipo romeujr = romeu;jr=renata;
+
+@@ defvar
+var v_ar1@, v_ar2@, v_ar3@ : inteiro; v_ar4@, v_ar5@,v_ar6@:double;
+
+@@ defproc
+procedimento p_rocedimento1@ (var v_ariave1@,v_ariavel2@:inteiro;var v_ariavel2@ : int);
+inicio
+		v_ariavel1@ := v_ariavel2@;
+	fim;
+
+	@@ definição de função
+	funcao f_uncao1@(var jr:int):int;
+	inicio
+		jr := 5;
+	fim;
+
+	// com parametro formal sem var //
+	procedimento procedimentoSemVar(v_ariave1@,v_ariavel2@:inteiro);
+	inicio
+		v_ariavel3@ := v_ariavel4@;
+	fim;
+
+	// parametro formal sem var //
+	funcao funcaoSemVar(outraVar:float):double;
+	inicio
+		outraVar := 10;
+	fim;
+
+	(< sem parametro formal  >)
+	funcao funcaoSemVar:double;
+	inicio
+		oVar := 10;
+	fim;
+
+	// comando composto //
+	inicio
+
+		@@ comando sem rótulo
+
+		// atribuição com expressão com ou sem "relação",
+		com e sem os operadores //
+		y := 5;
+		y:= +10*x_1@;
+		y:= -10 div x_2@;
+		y:= -10 e x_3@;
+		y:= 10+x_4@;
+		y:= 10-x_5@;
+		y:= 10 ou x_5@;
+		y:= 7,8 + 6,8 - x_6@* x_7@;
+
+		@@ teste do comando condicional
+		se x_1@>x_2@ entao
+			leia(x_1@,x_2@)
+		senao
+			imprima(x_1@;x_2@)
+		;
+
+		@@ comando repetitivo
+		enquanto x_3@<=x_4@ ou (x_4@<=x_5@) do
+			x_3@:= +2
+		;
+
+		@@ comando leia
+		leia(x_3@,x_4@);
+
+		@@ comando imprima
+		imprima(x_3@;x_4@);
+
+		@@ chamada de sub-rotina
+		resultado:= funcaoSemVar(v_ar1@;v_ar2@);
+
+	fim
+. 
